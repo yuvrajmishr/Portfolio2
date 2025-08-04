@@ -1,0 +1,208 @@
+<!DOCTYPE html class="scroll-smooth">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ml-5">
+      <h1 class="text-white text-4xl font-bold">YUVRAJ<span class="text-purple-900"> MISHRA</span></h1>
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <!-- <span class="ml-3 text-xl text-red-900">Tailblocks</span> -->
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center p-5">
+      <a href="port.html" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">HOME</a>
+      <a href="#skills" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">SKILLS</a>
+      <a href="#projects" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">PROJECTS</a>
+      <a href="#contact" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">CONTACT</a>
+    </nav>
+    
+  </div>
+</header>
+
+<section class="min-h-screen flex flex-col justify-center px-8 bg-gray-900 fade-in">
+  <div class="grid md:grid-cols-2 gap-8 items-center ml-10">
+    
+    <div class="ml-40">
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <br><span class="text-purple-700 text-8xl underline">Yuvraj</span></h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-6 max-w-md">
+        A passionate creative developer and designer. I bring ideas to life with motion & design.
+      </p>
+      
+    </div>
+
+    
+    <div class="w-full h-[500px] rounded-xl flex items-center justify-center mt-20">
+      <img src="sss.PNG" class="rounded-xl w-[700px] h-[850px] object-cover hover:scale-105 transition-transform transform bg-blend-overlay" />
+      
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="py-20 px-4 bg-gray-800 fade-in">
+  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">My skills</h1>
+ 
+<section class="bg-gray-800 py-5" id="skills">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 gap-8">
+      
+    
+      <div class=" group relative bg-white rounded-xl shadow-md p-6 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-indigo-50">
+        <div class="text-4xl mb-3">
+          💻
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+        <p class="text-sm text-gray-600 mt-1 ">Structures the content of web pages</p>
+      </div>
+
+      
+      <div class="group relative bg-white rounded-xl shadow-md p-6 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-indigo-50">
+        <div class="text-4xl mb-3 ">
+          🎨
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+        <p class="text-sm text-gray-600 mt-1">Styles the HTML</p>
+      </div>
+
+      
+      <div class="group relative bg-white rounded-xl shadow-md p-6 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-indigo-50">
+        <div class="text-4xl mb-3 transition">
+          ⚙️
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+        <p class="text-sm text-gray-600 mt-1"> Adds interactivity</p>
+      </div>
+
+      
+
+      <div class="group relative bg-white rounded-xl shadow-md p-6 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-indigo-50">
+        <div class="text-4xl mb-3">
+          ⚛️
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">React.js</h3>
+        <p class="text-sm text-gray-600 mt-1">A JavaScript library for building fast UI components</p>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+  
+  <section id="projects" class="py-20 px-8 bg-gray-800 fade-in">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">Projects</h1>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+
+      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-900">
+        <h3 class="text-2xl font-semibold mb-2">Project - 1</h3>
+        <p class="text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci doloremque deleniti, distinctio impedit voluptatibus veniam quis laborum in accusamus, dolorem sint, perspiciatis quasi enim placeat nostrum earum? Rem, incidunt dolorum.
+        Facere consectetur, quod necessitatibus expedita et in, error vero, tempore eius blanditiis eveniet nisi omnis placeat nam illum facilis. Dolores quaerat sunt nesciunt explicabo commodi molestias dolor eveniet nam blanditiis.
+        Quibusdam recusandae, fuga corrupti dignissimos laboriosam reprehenderit voluptatum omnis totam quisquam iure error modi numquam nulla? Animi, natus eligendi quis cum doloremque adipisci ratione. Consequuntur eos et numquam minus porro.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-900">
+        <h3 class="text-2xl font-semibold mb-2">Project - 2</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis, aliquam sunt debitis deleniti itaque tempore ipsum nemo voluptates perspiciatis, cum quam excepturi? Earum voluptate quaerat suscipit blanditiis corrupti repellendus.
+        Officiis dolorem assumenda iusto pariatur dolorum obcaecati necessitatibus doloribus id modi beatae saepe temporibus repellat deserunt quod doloremque accusantium ex consectetur veritatis aliquid distinctio nobis voluptate harum, molestiae vitae. Odit.
+        Ducimus tenetur, assumenda est vitae quos repellat beatae quaerat culpa? Reiciendis dolores quae, at nemo cum voluptas nesciunt exercitationem asperiores inventore veritatis blanditiis provident sed consequatur autem repellendus ratione fuga?</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:scale-105 hover:bg-gray-900 transition-transform duration-300">
+        <h3 class="text-2xl font-semibold mb-2">Project - 3</h3>
+        <p class="text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis aut dolores, dolorum voluptatum placeat repellendus necessitatibus eos eaque, distinctio cupiditate totam minima velit a. Autem impedit fuga quod voluptate vel.
+        Beatae obcaecati velit, iure sit ad repellendus! Corrupti, quisquam incidunt? Quia enim libero non maiores, voluptate quos officia nulla. Voluptatem, ullam ab. Perspiciatis dolorem, asperiores exercitationem ipsum sapiente quasi neque?
+        Hic deserunt neque ducimus qui at voluptates, consequuntur unde distinctio placeat consectetur quae commodi quo repellat autem harum soluta porro culpa explicabo blanditiis impedit sapiente ipsa cum odit! Dicta, maxime.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="py-20 px-8 bg-gray-900 fade-in">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white text-center">About me</h1>
+    <div class="max-w-3xl mx-auto text-center text-gray-300">
+      <h1 class="text-6xl font-bold">So, who am I?</h1>
+      <p class="mt-3">I'm Yuvraj Mishra, a frontend developer passionate about building clean and user-friendly websites. I specialize in React, JavaScript, and responsive design. I love turning complex problems into simple, elegant solutions. When I’m not coding, you’ll find me exploring new tech or sketching ideas.
+      </p>
+    </div>
+  </section>
+<footer class="text-center py-6 bg-gray-900 "></footer>
+  
+  <section class="py-5 px-8 bg-gray-800 fade-in">
+    <!-- <h2 class="text-4xl font-bold text-center mb-6">Contact Me</h2> -->
+    <section id="contact" class="text-gray-600 body-font relative">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-5">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+      
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-200">Name</label>
+            <input placeholder="Enter your name" type="text" id="name" name="name" class="hover:scale-105 transition-transform transform placeholder-gray-800 w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-200">Email</label>
+            <input placeholder="Enter your email" type="email" id="email" name="email" class="hover:scale-105 transition-transform transform placeholder-gray-800 w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div> 
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-200">Message</label>
+            <textarea placeholder="Enter your desired message..." id="message" name="message" class="hover:scale-105 transition-transform transform placeholder-gray-800 w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 hover:scale-105 rounded text-lg">SUBMIT</button>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+          
+        </div>
+        </section>
+    <div class="text-center">
+      <div class="flex justify-center space-x-4 mb-4 text-gray-500">
+        <a href="https://www.linkedin.com/in/yuvraj-mishra-923093326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"> </i> Linkedin</a>
+      <a href="https://www.instagram.com/yuvrajmishr?igsh=MWZtdzc1ZGxxeHJ5bg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"> </i> Instagram</a>
+      <a href="yuvrajyumi007@gmail.com"><i class="fa-solid fa-envelope"></i> yuvrajyumi007@gmail.com</a>
+      <a href="#"><i class="fa-solid fa-phone"></i> 6393870857</a>
+      </div>
+      
+      
+    </div>
+    </section>
+    </div>
+      
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
