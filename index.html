@@ -12,11 +12,24 @@
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
+     
     }
 
     .fade-in {
       animation: fadeIn 1.5s ease-in forwards;
     }
+    #spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allows clicks through */
+  background: radial-gradient(circle 100px at, gray, transparent 80%);
+  transition: background 0.2s ease;
+  z-index: 50; /* make sure it stays on top but below text */
+}
+
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -25,6 +38,8 @@
   </style>
 </head>
 <body class="bg-gray-900 text-white">
+  <div id="spotlight"></div>
+
 <header class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ml-5">
@@ -34,7 +49,7 @@
       <!-- <span class="ml-3 text-xl text-red-900">Tailblocks</span> -->
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center p-5">
-      <a href="port.html" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">HOME</a>
+      <a href="#home" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">HOME</a>
       <a href="#skills" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">SKILLS</a>
       <a href="#projects" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">PROJECTS</a>
       <a href="#contact" class="mr-5 hover:text-gray-300 hover:scale-105 transition-transform">CONTACT ME</a>
@@ -204,5 +219,17 @@
     </div>
   </div>
   </footer>
+  
+  <script>
+  const spotlight = document.getElementById("spotlight");
+
+  document.addEventListener("mousemove", (e) => {
+    spotlight.style.background = `
+      radial-gradient(circle 30px at ${e.clientX}px ${e.clientY}px, #000000, transparent 50%)
+    `;
+  });
+</script>
+
+
 </body>
 </html>
